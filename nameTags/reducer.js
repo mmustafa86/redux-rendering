@@ -17,3 +17,7 @@ const reducer = (state = initialState, action) => {
 console.log(newState)
     return state;
 }
+
+//newstate=state.concat(action.name)
+
+//used the form submit 

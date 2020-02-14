@@ -8,7 +8,7 @@ const initialState = [
         suit: "D"
     }
 ];
-function cards(){
+var cards =function (){
     var suits = ['H', 'H', 'H', 'H', 'H', 'H', 'H', 'H', 'H', 'H', 'H', 'H', 'H',
     'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D',
     'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S',
@@ -29,9 +29,12 @@ for (var i = 0; i < suits.length; i++) {
 }
 return card
 }
-console.log(cards())
+// console.log(cards())
+var items=cards()
+console.log(items)
 
-const reducer = (state = initialState, action) => {
+
+const reducer = (state = items, action) => {
     // Handle actions here - make sure you don't mutate the state!
     const { type } = action;
 //    console.log(state)
